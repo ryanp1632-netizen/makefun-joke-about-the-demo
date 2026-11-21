@@ -10,7 +10,7 @@ import { join } from 'node:path';
 const OUTPUT_DIR = process.env.MAKEFUN_OUTPUT_DIR ?? '/output';
 
 const JOKE =
-  "My coding agent crashed the live demo, marked the audience as flaky, " +
-  "and asked to re-run it with a smaller one.";
+  "The demo crashed on stage, so my coding agent rolled back to the last version that worked: " +
+  "the Figma mockup.";
 
 writeFileSync(join(OUTPUT_DIR, 'entry.txt'), JOKE);
