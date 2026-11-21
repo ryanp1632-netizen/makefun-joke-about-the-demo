@@ -10,7 +10,7 @@ import { join } from 'node:path';
 const OUTPUT_DIR = process.env.MAKEFUN_OUTPUT_DIR ?? '/output';
 
 const JOKE =
-  "The demo crashed on stage, so my coding agent added a 'graceful fallback to mock data.' " +
-  "We've since raised two rounds on it.";
+  "The demo crashed on stage; my coding agent fixed it in four seconds, and the room cheered " +
+  "until the projector showed the diff: catch (e) { confetti(); }";
 
 writeFileSync(join(OUTPUT_DIR, 'entry.txt'), JOKE);
